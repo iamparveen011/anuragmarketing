@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Services in India | Expert for E-commerce | Anurag Marketing</title>
+    <meta name="description" content="Professional SEO services in India tailored for e-commerce websites. Partner with an SEO expert to increase organic traffic & grow your business online.">
+    <meta name="keywords" content="SEO Services in India, SEO Expert in India, SEO for e-commerce websites India, SEO optimization, technical SEO, on-page SEO, off-page SEO, Anurag Marketing">
+    <meta name="author" content="Anurag Marketing">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.anuragmarketing.in/seo-optimization">
+    
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="SEO Services in India | Expert for E-commerce | Anurag Marketing">
+    <meta property="og:description" content="Professional SEO services in India tailored for e-commerce websites. Partner with an SEO expert to increase organic traffic & grow your business online.">
+    <meta property="og:url" content="https://www.anuragmarketing.in/seo-optimization">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <script src="tab-effect.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="fav.ico">
+    <meta name="robots" content="index, follow" />
+
+    <style>
+        /* ── SEO Page Specific Styles ── */
+        .seo-hero-badge {
+            
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(253, 224, 71, 0.15);
+            border: 1px solid rgba(253, 224, 71, 0.4);
+            color: var(--accent);
+            padding: 18px 18px;
+            
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        .rank-visual {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 12px;
+            margin: 50px auto;
+            max-width: 420px;
+        }
+
+        .rank-bar-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            flex: 1;
+        }
+
+        .rank-bar-wrap .rank-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--secondary-text);
+        }
+
+        .rank-bar {
+            width: 100%;
+            border-radius: 12px 12px 0 0;
+            transition: height 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .rank-bar.b1 { height: 180px; background: linear-gradient(180deg, #FDE047, #f59e0b); }
+        .rank-bar.b2 { height: 110px; background: linear-gradient(180deg, #94a3b8, #64748b); }
+        .rank-bar.b3 { height: 70px; background: linear-gradient(180deg, #c0a77a, #a08040); }
+
+        .rank-number {
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: var(--text);
+        }
+
+        .rank-number.gold { color: #f59e0b; }
+
+        /* SEO Pillars */
+        .pillar-grid {
+            
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .pillar-card {
+            
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 36px 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pillar-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            border-radius: 20px 20px 0 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .pillar-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(0,0,0,0.12); }
+        .pillar-card:hover::before { opacity: 1; }
+
+        .pillar-card.onpage::before { background: linear-gradient(90deg, #3b82f6, #06b6d4); }
+        .pillar-card.offpage::before { background: linear-gradient(90deg, #10b981, #84cc16); }
+        .pillar-card.technical::before { background: linear-gradient(90deg, #f59e0b, #ef4444); }
+
+        .pillar-icon {
+            width: 64px; height: 64px;
+            border-radius: 16px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.7rem;
+            margin-bottom: 22px;
+        }
+
+        .pillar-card.onpage .pillar-icon { background: rgba(59,130,246,0.12); color: #3b82f6; }
+        .pillar-card.offpage .pillar-icon { background: rgba(16,185,129,0.12); color: #10b981; }
+        .pillar-card.technical .pillar-icon { background: rgba(245,158,11,0.12); color: #f59e0b; }
+
+        .pillar-list {
+            list-style: none;
+            padding: 0; margin: 18px 0 0;
+            display: flex; flex-direction: column; gap: 10px;
+        }
+
+        .pillar-list li {
+            display: flex; align-items: center; gap: 10px;
+            font-size: 0.95rem; color: var(--secondary-text);
+        }
+
+        .pillar-list li i { font-size: 0.8rem; color: var(--accent); flex-shrink: 0; }
+
+        /* Stats strip */
+        .stats-strip {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1px;
+            background: var(--border);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        .stat-cell {
+            background: var(--card-bg);
+            padding: 40px 24px;
+            text-align: center;
+        }
+
+        .stat-cell h3 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+
+        .stat-cell p {
+            font-size: 0.95rem;
+            color: var(--secondary-text);
+            font-weight: 500;
+        }
+
+        /* Checklist CTA */
+        .cta-checklist { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px; text-align: left; }
+        .cta-checklist li { display: flex; align-items: center; gap: 12px; font-size: 1rem; color: #475569; }
+        .cta-checklist li i { color: #10b981; font-size: 1rem; flex-shrink: 0; }
+
+        /* Tool badges */
+        .tools-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .tool-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 50px;
+            padding: 10px 22px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #fff;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+            transition: transform 0.2s ease, background 0.2s ease;
+            cursor: default;
+        }
+
+        .tool-badge:hover {
+            background: #0f172a;
+            transform: translateY(-3px);
+        }
+
+        .tool-badge i {
+            color: #FDE047;
+        }
+
+        .tool-badge:hover { transform: translateY(-2px); }
+        .tool-badge i { color: var(--accent); }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "How long does SEO take to show results?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "SEO is a long-term investment. Most clients begin to see meaningful improvements in rankings and traffic within 3–6 months. However, factors like website age, competition level, and the starting baseline can influence this timeline. Sustainable top rankings typically solidify within 6–12 months."
+    }
+  },{
+    "@type": "Question",
+    "name": "Do you guarantee first-page rankings on Google?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No ethical SEO agency can guarantee specific rankings — as search algorithms are controlled by Google, not us. What we do guarantee is complete transparency, white-hat methodologies, and a relentless focus on delivering measurable improvements in traffic, leads, and revenue."
+    }
+  },{
+    "@type": "Question",
+    "name": "What makes your SEO different from other agencies?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We combine deep technical expertise with creative content strategy and aggressive (but ethical) link building. We don't use templated approaches — every strategy is custom-built based on your industry, competitors, and business goals. You also get a dedicated team and fully transparent monthly reports showing exactly what we've done and the results achieved."
+    }
+  },{
+    "@type": "Question",
+    "name": "Will SEO work for my local business?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Absolutely. Local SEO is one of the highest-ROI investments for brick-and-mortar businesses. We optimize your Google Business Profile, local citations, and location-targeted content to ensure you appear when nearby customers are searching for your services."
+    }
+  },{
+    "@type": "Question",
+    "name": "What does your SEO service include each month?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Each month, you receive: keyword ranking reports, technical health monitoring, fresh optimized content or content improvements, link acquisition activity, and a dedicated strategy call with your account manager. We maintain full transparency through a shared live dashboard."
+    }
+  }]
+}
+</script>
+</head>
+
+<body>
+
+    <nav class="nav-container">
+        <a href="https://www.anuragmarketing.in" class="logo" style="text-decoration: none; color: inherit; display: block;">Anurag Marketing</a>
+        <ul class="nav-menu">
+            <li>
+                <a href="/">
+                    <img src="icon/home.png" class="icon" alt="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="/about">
+                    <img src="icon/man.png" class="icon" alt="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li class="has-dropdown">
+                <a href="/services">
+                    <img src="icon/working.png" class="icon" alt="Services">
+                    <span>Services</span>
+                </a>
+                <ul class="dropdown">
+                    <li><a href="/performance-marketing"> Performance Marketing</a></li>
+                    <li><a href="/seo"> SEO Optimization</a></li>
+                    <li><a href="/smo"> SMO (Social Media)</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/blog">
+                    <img src="icon/blog.png" class="icon" alt="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="/contact">
+                    <img src="icon/customer-support.png" class="icon" alt="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- ── HERO ── -->
+    <section class="services-section" style="padding-top: 10px; padding-bottom: 60px;">
+        <div class="services-container">
+            <div class="services-header" style="text-align: center;">
+                <div class="seo-hero-badge">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    Search Engine Optimization
+                </div>
+                <h1 style="font-size: clamp(2.4rem, 5vw, 4rem); line-height: 1.15; margin-bottom: 22px; font-weight: 900; letter-spacing: -1px;">
+                    <span class="highlight-text">SEO Services in India</span>
+                </h1>
+                <p id="normalContent" style="max-width: 680px; margin: 0 auto 36px; font-size: 1.15rem; line-height: 1.7; color: var(--secondary-text);">
+                    Stop being invisible online. Our data-driven SEO strategies build long-term organic pipelines that bring you high-intent customers — without paying per click.
+                </p>
+                <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                    <a href="/contact" class="btn" style="padding: 15px 38px; font-size: 1.05rem; border-radius: 30px; display: inline-block;">
+                        Get Free SEO Audit <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i>
+                    </a>
+                    <a href="javascript:void(0)" id="openSeoModalBtn" style="padding: 15px 38px; font-size: 1.05rem; border-radius: 30px; background: #1e293b; color: #fff; display: inline-block; text-decoration: none; font-weight: 700; letter-spacing: 0.3px; transition: background 0.25s ease, transform 0.2s ease;" onmouseover="this.style.background='#0f172a'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#1e293b'; this.style.transform='translateY(0)'">
+                        Read More <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Rank Visual -->
+            <div class="rank-visual">
+                <div class="rank-bar-wrap">
+                    <span class="rank-number gold">#1</span>
+                    <div class="rank-bar b1"></div>
+                    <span class="rank-label">You</span>
+                </div>
+                <div class="rank-bar-wrap">
+                    <span class="rank-number">#2</span>
+                    <div class="rank-bar b2"></div>
+                    <span class="rank-label">Typical Agency</span>
+                </div>
+                <div class="rank-bar-wrap">
+                    <span class="rank-number">#3</span>
+                    <div class="rank-bar b3"></div>
+                    <span class="rank-label">DIY SEO</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── STATS STRIP ── -->
+    <section style="padding: 0 20px 80px;">
+        <div class="services-container">
+            <div class="stats-strip">
+                <div class="stat-cell">
+                    <h3 style="color: #3b82f6;">100<span style="font-size:1.8rem;">%</span></h3>
+                    <p>Average Organic Traffic Increase</p>
+                </div>
+                <div class="stat-cell">
+                    <h3 style="color: #10b981;">60<span style="font-size:1.8rem;">%</span></h3>
+                    <p>Clients Reach Page 1 in 6 Months</p>
+                </div>
+                <div class="stat-cell">
+                    <h3 style="color: #f59e0b;">2x</h3>
+                    <p>More Leads Than Paid Ads Alone</p>
+                </div>
+                <div class="stat-cell">
+                    <h3 style="color: var(--accent);">50<span style="font-size:1.8rem;">+</span></h3>
+                    <p>Keywords Ranked on Page 1</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── SEO PILLARS ── -->
+    <section class="services-section" id="seo-pillars">
+        <div class="services-container">
+            <div class="services-header" style="text-align: center; margin-bottom: 60px;">
+                <h4 class="sub-heading" style="justify-content: center;">What We Do</h4>
+                <h2>The 3 Pillars of Our <span class="highlight-text">SEO Strategy</span></h2>
+                <p style="max-width: 600px; margin: 0 auto;">Every successful SEO campaign is built on a strong technical foundation, optimized content, and a powerful backlink profile.</p>
+            </div>
+
+            <div class="pillar-grid">
+                <!-- On-Page -->
+                <div class="pillar-card onpage">
+                    <div class="pillar-icon">
+                        <i class="fa-solid fa-file-code"></i>
+                    </div>
+                    <h3 style="font-size: 1.4rem; margin-bottom: 10px;">On-Page SEO</h3>
+                    <p style="color: var(--secondary-text); font-size: 0.97rem; line-height: 1.6;">Optimize every element of your web pages to communicate authority, relevance, and intent to search engines.</p>
+                    <ul class="pillar-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Keyword Research &amp; Mapping</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Meta Tag &amp; Heading Optimization</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Content Structuring &amp; NLP Optimization</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Internal Linking Architecture</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Image ALT Tags &amp; Schema Markup</li>
+                    </ul>
+                </div>
+
+                <!-- Off-Page -->
+                <div class="pillar-card offpage">
+                    <div class="pillar-icon">
+                        <i class="fa-solid fa-link"></i>
+                    </div>
+                    <h3 style="font-size: 1.4rem; margin-bottom: 10px;">Off-Page SEO</h3>
+                    <p style="color: var(--secondary-text); font-size: 0.97rem; line-height: 1.6;">Build unshakeable domain authority through ethical, white-hat link acquisition and brand signal strategies.</p>
+                    <ul class="pillar-list">
+                        <li><i class="fa-solid fa-circle-check"></i> High-DA Guest Posting</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Niche-Relevant Link Building</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Digital PR &amp; Brand Mentions</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Competitor Backlink Analysis</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Local Citations &amp; NAP Consistency</li>
+                    </ul>
+                </div>
+
+                <!-- Technical -->
+                <div class="pillar-card technical">
+                    <div class="pillar-icon">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h3 style="font-size: 1.4rem; margin-bottom: 10px;">Technical SEO</h3>
+                    <p style="color: var(--secondary-text); font-size: 0.97rem; line-height: 1.6;">Ensure Google can crawl, index, and rank your site efficiently by eliminating every technical barrier to growth.</p>
+                    <ul class="pillar-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Core Web Vitals Optimization</li>
+                        <li><i class="fa-solid fa-circle-check"></i> XML Sitemap &amp; Robots.txt Audit</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Site Speed &amp; Mobile Optimization</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Crawl Error &amp; Redirect Fixes</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Structured Data Implementation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── OUR PROCESS ── -->
+    <section style="padding: 100px 20px; background: var(--bg);">
+        <div class="services-container" style="max-width: 820px;">
+            <div class="services-header" style="text-align: center; margin-bottom: 70px;">
+                <h4 class="sub-heading" style="justify-content: center;">Our Methodology</h4>
+                <h2>How We <span class="highlight-text">Rank You</span></h2>
+                <p style="max-width: 560px; margin: 0 auto;">A battle-tested 5-step process applied to every client — no guesswork, just proven execution.</p>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 28px;">
+
+                <div style="display: flex; gap: 25px; background: var(--card-bg); padding: 30px; border-radius: 20px; border: 1px solid var(--border); box-shadow: var(--shadow);">
+                    <div style="flex-shrink: 0; width: 60px; height: 60px; background: var(--accent); color: #111; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800;">01</div>
+                    <div>
+                        <h3 style="font-size: 1.4rem; color: var(--text); margin-bottom: 8px;">Deep SEO Audit &amp; Competitor Gap Analysis</h3>
+                        <p style="color: var(--secondary-text); font-size: 1rem; line-height: 1.65;">We perform a 100-point SEO audit of your site and benchmark every competitor ranking above you — revealing the exact gaps we need to close.</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 25px; background: var(--card-bg); padding: 30px; border-radius: 20px; border: 1px solid var(--border); box-shadow: var(--shadow);">
+                    <div style="flex-shrink: 0; width: 60px; height: 60px; background: var(--accent); color: #111; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800;">02</div>
+                    <div>
+                        <h3 style="font-size: 1.4rem; color: var(--text); margin-bottom: 8px;">Keyword Strategy &amp; Content Blueprint</h3>
+                        <p style="color: var(--secondary-text); font-size: 1rem; line-height: 1.65;">We identify high-opportunity, low-competition keywords and build a complete content roadmap designed to capture traffic at every stage of the buyer's journey.</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 25px; background: var(--card-bg); padding: 30px; border-radius: 20px; border: 1px solid var(--border); box-shadow: var(--shadow);">
+                    <div style="flex-shrink: 0; width: 60px; height: 60px; background: var(--accent); color: #111; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800;">03</div>
+                    <div>
+                        <h3 style="font-size: 1.4rem; color: var(--text); margin-bottom: 8px;">Technical Fixes &amp; On-Page Implementation</h3>
+                        <p style="color: var(--secondary-text); font-size: 1rem; line-height: 1.65;">Our team resolves all crawl issues, optimizes page speed, implements schema markup, and writes perfectly-structured, search-engine-ready content.</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 25px; background: var(--card-bg); padding: 30px; border-radius: 20px; border: 1px solid var(--border); box-shadow: var(--shadow);">
+                    <div style="flex-shrink: 0; width: 60px; height: 60px; background: var(--accent); color: #111; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800;">04</div>
+                    <div>
+                        <h3 style="font-size: 1.4rem; color: var(--text); margin-bottom: 8px;">Authority Building &amp; Link Acquisition</h3>
+                        <p style="color: var(--secondary-text); font-size: 1rem; line-height: 1.65;">We secure quality backlinks from authoritative, niche-relevant domains using ethical outreach, digital PR, and strategic content partnerships.</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 25px; background: var(--card-bg); padding: 30px; border-radius: 20px; border: 1px solid #10b981; box-shadow: 0 10px 30px -10px rgba(16,185,129,0.25);">
+                    <div style="flex-shrink: 0; width: 60px; height: 60px; background: #10b981; color: #fff; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800;">
+                        <i class="fa-solid fa-crown"></i>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1.4rem; color: var(--text); margin-bottom: 8px;">Monitor, Report &amp; Continuously Scale</h3>
+                        <p style="color: var(--secondary-text); font-size: 1rem; line-height: 1.65;">Monthly performance reports track rankings, traffic, and conversions. We continuously iterate, scale what's working, and adapt to every algorithm update.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── TOOLS WE USE ── -->
+    <section class="services-section" style="padding-top: 80px; padding-bottom: 80px;">
+        <div class="services-container">
+            <div class="services-header" style="text-align: center; margin-bottom: 20px;">
+                <h4 class="sub-heading" style="justify-content: center;">Industry-Leading Tools</h4>
+                <h2>Powered by the Best <span class="highlight-text">SEO Stack</span></h2>
+                <p style="max-width: 560px; margin: 0 auto;">We use enterprise-grade tools to ensure every decision is backed by real data — not guesswork.</p>
+            </div>
+
+            <div class="tools-row">
+                <div class="tool-badge"><i class="fa-brands fa-google"></i> Google Search Console</div>
+                <div class="tool-badge"><i class="fa-solid fa-chart-bar"></i> SEMrush</div>
+                <div class="tool-badge"><i class="fa-solid fa-magnifying-glass"></i> Ahrefs</div>
+                <div class="tool-badge"><i class="fa-solid fa-gauge-high"></i> PageSpeed Insights</div>
+                <div class="tool-badge"><i class="fa-solid fa-spider"></i> Screaming Frog</div>
+                <div class="tool-badge"><i class="fa-solid fa-chart-line"></i> Google Analytics 4</div>
+                <div class="tool-badge"><i class="fa-solid fa-map-pin"></i> Google My Business</div>
+                <div class="tool-badge"><i class="fa-solid fa-code"></i> Schema Pro</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FAQ ── -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <div class="faq-header">
+                <h2>SEO <span class="highlight-text">FAQ</span></h2>
+                <p>Answers to the most common questions about our SEO services.</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How long does SEO take to show results?
+                        <i class="fa-solid fa-chevron-down icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>SEO is a long-term investment. Most clients begin to see meaningful improvements in rankings and traffic within 3–6 months. However, factors like website age, competition level, and the starting baseline can influence this timeline. Sustainable top rankings typically solidify within 6–12 months.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you guarantee first-page rankings on Google?
+                        <i class="fa-solid fa-chevron-down icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No ethical SEO agency can guarantee specific rankings — as search algorithms are controlled by Google, not us. What we do guarantee is complete transparency, white-hat methodologies, and a relentless focus on delivering measurable improvements in traffic, leads, and revenue.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What makes your SEO different from other agencies?
+                        <i class="fa-solid fa-chevron-down icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We combine deep technical expertise with creative content strategy and aggressive (but ethical) link building. We don't use templated approaches — every strategy is custom-built based on your industry, competitors, and business goals. You also get a dedicated team and fully transparent monthly reports showing exactly what we've done and the results achieved.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Will SEO work for my local business?
+                        <i class="fa-solid fa-chevron-down icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. Local SEO is one of the highest-ROI investments for brick-and-mortar businesses. We optimize your Google Business Profile, local citations, and location-targeted content to ensure you appear when nearby customers are searching for your services.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What does your SEO service include each month?
+                        <i class="fa-solid fa-chevron-down icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Each month, you receive: keyword ranking reports, technical health monitoring, fresh optimized content or content improvements, link acquisition activity, and a dedicated strategy call with your account manager. We maintain full transparency through a shared live dashboard.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CTA SECTION ── -->
+    <section style="padding: 100px 20px; background-color: #f8fafc; border-top: 1px solid #e2e8f0; text-align: center;">
+        <div class="services-container" style="background: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23cbd5e1\' fill-opacity=\'0.2\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E'); padding: 70px 40px; border-radius: 24px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+            <h2 style="font-size: 2.5rem; color: #0f172a; margin-bottom: 18px; font-weight: 900; letter-spacing: -0.5px;">Ready to Dominate Search?</h2>
+            <p style="color: #475569; font-size: 1.1rem; max-width: 620px; margin: 0 auto 30px; line-height: 1.7;">Every day you're not on page one, a competitor is stealing your customers. Let's fix that — get a free, no-obligation SEO audit today.</p>
+
+            <ul class="cta-checklist" style="max-width: 360px; margin: 0 auto 40px;">
+                <li><i class="fa-solid fa-circle-check"></i> Free 30-minute strategy call</li>
+                <li><i class="fa-solid fa-circle-check"></i> Full site audit report included</li>
+                <li><i class="fa-solid fa-circle-check"></i> No contracts — cancel anytime</li>
+                <li><i class="fa-solid fa-circle-check"></i> ROI-focused, transparent reporting</li>
+            </ul>
+
+            <a href="/contact" class="btn" id="seo-cta-btn" style="padding: 16px 48px; font-size: 1.1rem; border-radius: 30px; box-shadow: 0 10px 25px -5px rgba(253,224,71,0.4);">
+                Claim Your Free SEO Audit <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="modern-footer">
+        <div class="footer-top">
+            <div class="footer-col brand-col">
+                <h2 class="footer-logo"><a href="/" style="color: inherit; text-decoration: none;">Anurag Marketing</a></h2>
+                <p>Accelerating digital success across all industries with cutting-edge strategies, education, and marketing automation.</p>
+                <div class="social-links">
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/guptaanurag09" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/anurag.gupta_09" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1Djz8Gpzga/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/services">Our Services</a></li>
+                    <li><a href="/blog">Latest Blog</a></li>
+                    <li><a href="/contact">Contact Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="/services">Digital Marketing</a></li>
+                    <li><a href="/seo">SEO Optimization</a></li>
+                    <li><a href="/performance-marketing">Performance Marketing</a></li>
+                    <li><a href="/smo">SMO</a></li>
+                    <li><a href="/services">Brand Strategy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col newsletter-col">
+                <h3>Subscribe</h3>
+                <p>Get the latest SEO tips, updates, and industry insights directly in your inbox.</p>
+                <form class="subscribe-form" onsubmit="event.preventDefault(); this.querySelector('button').innerHTML='<i class=\'fa-solid fa-check\'></i>'; this.querySelector('input').value=''; this.querySelector('button').style.background='#10b981';">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Anurag Marketing. All rights reserved. Designed for digital success.</p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Accordion
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".faq-question").forEach(question => {
+                question.addEventListener("click", () => {
+                    const faqItem = question.parentElement;
+                    const faqAnswer = question.nextElementSibling;
+                    document.querySelectorAll(".faq-item").forEach(item => {
+                        if (item !== faqItem) {
+                            item.classList.remove("active");
+                            item.querySelector(".faq-answer").style.maxHeight = null;
+                        }
+                    });
+                    faqItem.classList.toggle("active");
+                    if (faqItem.classList.contains("active")) {
+                        faqAnswer.style.maxHeight = faqAnswer.scrollHeight + "px";
+                    } else {
+                        faqAnswer.style.maxHeight = null;
+                    }
+                });
+            });
+
+            // Animate rank bars on load
+            const bars = document.querySelectorAll('.rank-bar');
+            bars.forEach(bar => {
+                const finalH = bar.style.height || bar.classList.contains('b1') ? '180px' : bar.classList.contains('b2') ? '110px' : '70px';
+                bar.style.height = '0';
+                setTimeout(() => { bar.style.height = finalH; }, 300);
+            });
+
+            // SEO Content Modal Logic
+            const openModalBtn = document.getElementById("openSeoModalBtn");
+            const closeModalBtn = document.getElementById("closeSeoModalBtn");
+            const modal = document.getElementById("seoContentModal");
+            const modalOverlay = document.getElementById("seoModalOverlay");
+
+            if (openModalBtn && modal) {
+                openModalBtn.addEventListener("click", function () {
+                    modal.classList.add("active");
+                    document.body.classList.add("modal-open");
+                });
+
+                const closeModal = function () {
+                    modal.classList.remove("active");
+                    document.body.classList.remove("modal-open");
+                };
+
+                closeModalBtn.addEventListener("click", closeModal);
+                modalOverlay.addEventListener("click", closeModal);
+
+                document.addEventListener("keydown", function (e) {
+                    if (e.key === "Escape" && modal.classList.contains("active")) {
+                        closeModal();
+                    }
+                });
+            }
+        });
+    </script>
+
+    <!-- SEO Content Modal -->
+    <div id="seoContentModal" class="seo-modal" aria-hidden="true">
+        <div class="seo-modal-overlay" id="seoModalOverlay"></div>
+        <div class="seo-modal-container">
+            <div class="seo-modal-header">
+                <h3>About Our SEO </h3>
+                <button class="seo-modal-close" id="closeSeoModalBtn" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="seo-modal-body" id="seoModalBody">
+                
+                <p>Most websites don’t have a traffic problem. They have a basics problem.</p>
+                <p>That’s what we usually see when someone comes for SEO Services in India. Pages are there, content is there, but nothing is set up properly. Either the wrong keywords are targeted, or the pages are not built in a way that search engines can understand.</p>
+                <p>We don’t start with big plans. First we check what is already on your site. What is working, what is not, and what can be fixed quickly. After that, we move step by step. No rush, no unnecessary changes.</p>
+                <p>If you are trying to find an SEO Expert in India, you don’t really need someone who throws technical words at you. You need someone who can look at your website and tell you clearly what is going wrong. Most of the time, the issues are simple, just ignored.</p>
+                <p>For SEO for e-commerce websites India, the situation is usually worse. Too many pages, same type of content everywhere, and no clear structure. Products are uploaded, but not in a way that helps them rank. Categories are weak, and internal linking is almost missing.</p>
+                <p>We fix that slowly. Clean structure, better page setup, and content that actually matches what people search for. No shortcuts here.</p>
+                <p>SEO does not suddenly change things overnight. It takes time. But once the base is set right, you don’t have to keep guessing what to do next.</p>
+                <p>That’s it. That’s the work.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

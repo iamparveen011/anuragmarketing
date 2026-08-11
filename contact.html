@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Anurag Marketing</title>
+    <link rel="canonical" href="https://www.anuragmarketing.in/contact" />
+
+    <link rel="stylesheet" href="index.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <script src="tab-effect.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="fav.ico">
+    <meta name="robots" content="index, follow" />
+
+</head>
+
+<body>
+
+    <nav class="nav-container">
+
+        <a href="https://www.anuragmarketing.in" class="logo" style="text-decoration: none; color: inherit; display: block;">Anurag Marketing</a>
+
+        <ul class="nav-menu">
+
+            <li>
+                <a href="/">
+                    <img src="icon/home.png" class="icon" alt="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="/about">
+                    <img src="icon/man.png" class="icon" alt="About">
+                    <span>About</span>
+                </a>
+            </li>
+
+            <li class="has-dropdown">
+                <a href="/services">
+                    <img src="icon/working.png" class="icon" alt="Services">
+                    <span>Services</span>
+                </a>
+                <ul class="dropdown">
+                    <li><a href="/performance-marketing"> Performance Marketing</a></li>
+                    <li><a href="/seo"> SEO Optimization</a></li>
+                    <li><a href="/smo"> SMO (Social Media)</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/blog">
+                    <img src="icon/blog.png" class="icon" alt="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="/contact">
+                    <img src="icon/customer-support.png" class="icon" alt="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+
+        </ul>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+    </nav>
+
+
+    <section class="contact-section">
+        <div class="contact-container">
+
+            <div class="contact-info">
+                <h2>Let's Talk!</h2>
+                <p>Have a project in mind or want to accelerate your digital growth? Drop us a message, and our team
+                    will get back to you within 24 hours.</p>
+
+                <div class="info-items">
+                    <div class="info-box">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info-text">
+                            <h4>Email Us</h4>
+                            <a href="mailto:info@anuragmarketing.in" style="color: inherit; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='inherit'">info@anuragmarketing.in</a>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-text">
+                            <h4>Call Us</h4>
+                            <a href="tel:+919821038868" style="color: inherit; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='inherit'">+91 98210 38868</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="accent-circle"></div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <h3>Send us a Message</h3>
+
+                <!-- Status Message Box -->
+                <div id="form-status" style="display:none; padding: 14px 20px; border-radius: 12px; margin-bottom: 20px; font-size: 0.95rem; font-weight: 500; text-align: center;"></div>
+
+                <form class="modern-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label>First Name *</label>
+                            <input type="text" name="first_name" placeholder="First name" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Last Name</label>
+                            <input type="text" name="last_name" placeholder="Last Name">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Email Address *</label>
+                        <input type="email" name="email" placeholder="xyz@example.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Phone Number</label>
+                        <input type="tel" name="phone" placeholder="+91 98765 43210">
+                    </div>
+
+                    <div class="input-group">
+                        <label>How can we help you? *</label>
+                        <textarea name="message" rows="4" placeholder="Tell us about your project or inquiry..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="submitBtn">SEND MESSAGE <i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+
+                <script>
+                document.getElementById('contactForm').addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    var btn = document.getElementById('submitBtn');
+                    var status = document.getElementById('form-status');
+
+                    // Show loading state
+                    btn.disabled = true;
+                    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin" style="margin-right:8px;"></i>Sending...';
+                    status.style.display = 'none';
+
+                    var formData = new FormData(this);
+
+                    fetch('/contact_mail', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(function(res) { return res.json(); })
+                    .then(function(data) {
+                        if (data.success) {
+                            status.style.display = 'block';
+                            status.style.background = 'rgba(16, 185, 129, 0.12)';
+                            status.style.border = '1px solid rgba(16, 185, 129, 0.4)';
+                            status.style.color = '#10b981';
+                            status.innerHTML = '<i class="fa-solid fa-circle-check" style="margin-right:8px;"></i>' + data.message;
+                            document.getElementById('contactForm').reset();
+                            btn.disabled = false;
+                            btn.innerHTML = 'SEND MESSAGE <i class="fa-solid fa-arrow-right"></i>';
+                        } else {
+                            throw new Error(data.message);
+                        }
+                    })
+                    .catch(function(err) {
+                        status.style.display = 'block';
+                        status.style.background = 'rgba(239, 68, 68, 0.12)';
+                        status.style.border = '1px solid rgba(239, 68, 68, 0.4)';
+                        status.style.color = '#ef4444';
+                        status.innerHTML = '<i class="fa-solid fa-circle-exclamation" style="margin-right:8px;"></i>' + (err.message || 'Something went wrong. Please try again.');
+                        btn.disabled = false;
+                        btn.innerHTML = 'SEND MESSAGE <i class="fa-solid fa-arrow-right"></i>';
+                    });
+                });
+                </script>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="modern-footer">
+        <div class="footer-top">
+            <div class="footer-col brand-col">
+                <h2 class="footer-logo"><a href="https://www.anuragmarketing.in" style="color: inherit; text-decoration: none;">Anurag Marketing</a></h2>
+                <p>Accelerating digital success across all industries with cutting-edge strategies, education, and
+                    marketing automation.</p>
+                <div class="social-links">
+                    <a href="https://x.com/AnuragG31384040" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/anurag-marketing/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/anurag.gupta_09" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1Djz8Gpzga/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/services">Our Services</a></li>
+                    <li><a href="/blog">Latest Blog</a></li>
+                    <li><a href="/contact">Contact Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="/services">Digital Marketing</a></li>
+                    <li><a href="/seo">SEO Optimization</a></li>
+                    <li><a href="/performance-marketing">Performance Marketing</a></li>
+                    <li><a href="/smo">SMO</a></li>
+                    <li><a href="/services">Brand Strategy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col newsletter-col">
+                <h3>Subscribe</h3>
+                <p>Get the latest updates, news, and special offers directly in your inbox.</p>
+                <form class="subscribe-form" onsubmit="event.preventDefault(); this.querySelector('button').innerHTML='<i class=\'fa-solid fa-check\'></i>'; this.querySelector('input').value=''; this.querySelector('button').style.background='#10b981';">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Anurag Marketing. All rights reserved. Designed for digital success.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a id="whatsapp-float" href="https://wa.me/919821038868" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="30" height="30">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span class="wa-tooltip">Chat with us!</span>
+    </a>
+
+    <style>
+        #whatsapp-float {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 9999;
+            background: #25D366;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(37,211,102,0.45);
+            text-decoration: none;
+            animation: wa-pulse 2.2s infinite;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        #whatsapp-float:hover {
+            transform: scale(1.12);
+            box-shadow: 0 6px 28px rgba(37,211,102,0.65);
+            animation: none;
+        }
+        #whatsapp-float:hover .wa-tooltip {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .wa-tooltip {
+            position: absolute;
+            right: 70px;
+            background: #111827;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 8px;
+            white-space: nowrap;
+            opacity: 0;
+            transform: translateX(8px);
+            transition: opacity 0.25s ease, transform 0.25s ease;
+            pointer-events: none;
+            font-family: 'Inter', sans-serif;
+        }
+        .wa-tooltip::after {
+            content: '';
+            position: absolute;
+            left: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            border: 6px solid transparent;
+            border-left-color: #111827;
+        }
+        @keyframes wa-pulse {
+            0%   { box-shadow: 0 0 0 0 rgba(37,211,102,0.55); }
+            70%  { box-shadow: 0 0 0 14px rgba(37,211,102,0); }
+            100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+        }
+    </style>
+
+</body>
+
+</html>

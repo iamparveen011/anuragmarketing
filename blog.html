@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Anurag Marketing</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <script src="tab-effect.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="fav.ico">
+    <meta name="robots" content="index, follow" />
+
+    <style>
+        /* Add a grid layout specifically for the blog page instead of the slider */
+        .blog-page-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            padding: 0 30px;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .blog-page-grid .blog-card {
+            width: 100%;
+            /* Override fixed width from slider */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="nav-container">
+
+        <a href="https://www.anuragmarketing.in" class="logo" style="text-decoration: none; color: inherit; display: block;">Anurag Marketing</a>
+
+        <ul class="nav-menu">
+
+            <li>
+                <a href="/">
+                    <img src="icon/home.png" class="icon" alt="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="/about">
+                    <img src="icon/man.png" class="icon" alt="About">
+                    <span>About</span>
+                </a>
+            </li>
+
+            <li class="has-dropdown">
+                <a href="/services">
+                    <img src="icon/working.png" class="icon">
+                    <span>Services</span>
+                </a>
+                <ul class="dropdown">
+                    <li><a href="/performance-marketing"> Performance Marketing</a></li>
+                    <li><a href="/seo"> SEO Optimization</a></li>
+                    <li><a href="/smo"> SMO (Social Media)</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/blog">
+                    <img src="icon/blog.png" class="icon" alt="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="/contact">
+                    <img src="icon/customer-support.png" class="icon" alt="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+
+        </ul>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+    </nav>
+
+
+    <section class="premium-blog-section" style="padding-top: 30px; padding-bottom: 40px;">
+        <div class="blog-header">
+            <h2>Latest <span class="highlight-text">Insights</span></h2>
+            <p>Stay updated with the latest trends, tips, and strategies in digital marketing.</p>
+        </div>
+
+        <div class="blog-page-grid">
+            <!-- Blogs will be injected here dynamically via JS from data/blogs.json -->
+        </div>
+    </section>
+
+    <footer class="modern-footer">
+        <div class="footer-top">
+            <div class="footer-col brand-col">
+                <h2 class="footer-logo"><a href="https://www.anuragmarketing.in" style="color: inherit; text-decoration: none;">Anurag Marketing</a></h2>
+                <p>Accelerating digital success across all industries with cutting-edge strategies, education, and
+                    marketing automation.</p>
+                <div class="social-links">
+                    <a href="https://x.com/AnuragG31384040" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/anurag-marketing/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/anurag.gupta_09" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1Djz8Gpzga/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/services">Our Services</a></li>
+                    <li><a href="/blog">Latest Blog</a></li>
+                    <li><a href="/contact">Contact Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="/services">Digital Marketing</a></li>
+                    <li><a href="/seo">SEO Optimization</a></li>
+                    <li><a href="/performance-marketing">Performance Marketing</a></li>
+                    <li><a href="/smo">SMO</a></li>
+                    <li><a href="/services">Brand Strategy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col newsletter-col">
+                <h3>Subscribe</h3>
+                <p>Get the latest updates, news, and special offers directly in your inbox.</p>
+                <form class="subscribe-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Anurag Marketing. All rights reserved. Designed for digital success.</p>
+        </div>
+    </footer>
+        <!-- WhatsApp Floating Button -->
+    <a id="whatsapp-float" href="https://wa.me/919821038868" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="30" height="30">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span class="wa-tooltip">Chat with us!</span>
+    </a>
+
+
+</body>
+
+</html>
