@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMO Services in India | Affordable SMO Expert | Anurag Marketing</title>
+    <meta name="description" content="Boost your brand with SMO services in India. Get affordable SMO solutions from an expert to grow your social media presence & engagement effectively.">
+    <meta name="keywords" content="SMO Services in India, Affordable SMO Services, SMO Expert in India, social media marketing, SMM services, social media management, Anurag Marketing">
+    <meta name="author" content="Anurag Marketing">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.anuragmarketing.in/smo" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="SMO Services in India | Affordable SMO Expert | Anurag Marketing">
+    <meta property="og:description" content="Boost your brand with SMO services in India. Get affordable SMO solutions from an expert to grow your social media presence & engagement effectively.">
+    <meta property="og:url" content="https://www.anuragmarketing.in/smo">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <script src="tab-effect.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="fav.ico">
+    <meta name="robots" content="index, follow" />
+
+    <style>
+        /* ── SMM Page Specific Styles ── */
+
+        .smm-hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(236, 72, 153, 0.12);
+            border: 1px solid rgba(236, 72, 153, 0.35);
+            color: #ec4899;
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        /* Platform cards */
+        .platform-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        @media (max-width: 900px) {
+            .platform-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 560px) {
+            .platform-grid { grid-template-columns: 1fr; }
+        }
+
+        .platform-card {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 36px 28px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .platform-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            border-radius: 20px 20px 0 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .platform-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(0,0,0,0.1); }
+        .platform-card:hover::before { opacity: 1; }
+
+        .platform-card.ig::before   { background: linear-gradient(90deg, #f58529, #dd2a7b, #8134af); }
+        .platform-card.fb::before   { background: linear-gradient(90deg, #1877F2, #4267B2); }
+        .platform-card.yt::before   { background: linear-gradient(90deg, #FF0000, #cc0000); }
+        .platform-card.li::before   { background: linear-gradient(90deg, #0A66C2, #004182); }
+        .platform-card.tw::before   { background: linear-gradient(90deg, #1DA1F2, #0d8bd9); }
+        .platform-card.tk::before   { background: linear-gradient(90deg, #010101, #ff0050); }
+
+        .platform-icon {
+            width: 64px; height: 64px;
+            border-radius: 16px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.9rem;
+            margin-bottom: 22px;
+        }
+
+        .platform-card.ig .platform-icon { background: rgba(221,42,123,0.1); color: #dd2a7b; }
+        .platform-card.fb .platform-icon { background: rgba(24,119,242,0.1); color: #1877F2; }
+        .platform-card.yt .platform-icon { background: rgba(255,0,0,0.1); color: #FF0000; }
+        .platform-card.li .platform-icon { background: rgba(10,102,194,0.1); color: #0A66C2; }
+        .platform-card.tw .platform-icon { background: rgba(29,161,242,0.1); color: #1DA1F2; }
+        .platform-card.tk .platform-icon { background: rgba(255,0,80,0.1); color: #ff0050; }
+
+        .platform-list {
+            list-style: none;
+            padding: 0; margin: 16px 0 0;
+            display: flex; flex-direction: column; gap: 9px;
+        }
+        .platform-list li {
+            display: flex; align-items: center; gap: 10px;
+            font-size: 0.93rem; color: var(--secondary-text);
+        }
+        .platform-list li i { font-size: 0.78rem; color: var(--accent); flex-shrink: 0; }
+
+        /* Stats strip */
+        .stats-strip {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1px;
+            background: var(--border);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+        .stat-cell {
+            background: var(--card-bg);
+            padding: 40px 24px;
+            text-align: center;
+        }
+        .stat-cell h3 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+        .stat-cell p { font-size: 0.95rem; color: var(--secondary-text); font-weight: 500; }
+
+        /* CTA checklist */
+        .cta-checklist { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px; text-align: left; }
+        .cta-checklist li { display: flex; align-items: center; gap: 12px; font-size: 1rem; color: #475569; }
+        .cta-checklist li i { color: #10b981; font-size: 1rem; flex-shrink: 0; }
+
+        /* Deliverables tags */
+        .deliverable-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 40px;
+            justify-content: center;
+        }
+        .deliverable-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 50px;
+            padding: 10px 22px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #fff;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+        .deliverable-tag:hover { background: #0f172a; transform: translateY(-3px); }
+        .deliverable-tag i { color: #FDE047; }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "How many posts will you create per month?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Depending on your package, we typically create 20–30 posts per month including feed posts, Reels, and Stories. For premium plans, this includes daily posting across all selected platforms. Everything is planned in advance via a shared content calendar."
+    }
+  },{
+    "@type": "Question",
+    "name": "Do you handle content creation or do we need to provide materials?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We handle everything end-to-end — graphics, video editing, captions, and publishing. You only need to provide your brand assets (logo, brand colours) during onboarding. We also shoot UGC-style content ideas and scripts if you'd like to create original footage."
+    }
+  },{
+    "@type": "Question",
+    "name": "How long before I see results from social media?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Engagement improvements are typically visible within 30–45 days. Significant follower growth and brand awareness usually build within 3–4 months of consistent, strategy-led posting. Viral content moments can happen anytime — especially when we leverage trending audio and formats."
+    }
+  },{
+    "@type": "Question",
+    "name": "Will you reply to comments and DMs on our behalf?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes! Community management is included in our packages. We respond to comments, engage with followers, and manage DMs using your approved brand voice — so your audience always feels heard and valued."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can you run paid social ads along with organic management?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Absolutely. We offer integrated organic + paid SMM packages. Our team manages your ad budget on Meta (Facebook/Instagram) and other platforms with laser-targeted audience segmentation, creative testing, and conversion tracking — all under one roof."
+    }
+  }]
+}
+</script>
+</head>
+
+<body>
+
+    <nav class="nav-container">
+        <a href="https://www.anuragmarketing.in" class="logo" style="text-decoration: none; color: inherit; display: block;">Anurag Marketing</a>
+        <ul class="nav-menu">
+            <li>
+                <a href="/"><img src="icon/home.png" class="icon" alt="Home"><span>Home</span></a>
+            </li>
+            <li>
+                <a href="/about"><img src="icon/man.png" class="icon" alt="About"><span>About</span></a>
+            </li>
+            <li class="has-dropdown">
+                <a href="/services"><img src="icon/working.png" class="icon" alt="Services"><span>Services</span></a>
+                <ul class="dropdown">
+                    <li><a href="/performance-marketing"> Performance Marketing</a></li>
+                    <li><a href="/seo"> SEO Optimization</a></li>
+                    <li><a href="/smo"> SMO (Social Media)</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/blog"><img src="icon/blog.png" class="icon" alt="Blog"><span>Blog</span></a>
+            </li>
+            <li>
+                <a href="/contact"><img src="icon/customer-support.png" class="icon" alt="Contact"><span>Contact</span></a>
+            </li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- ── HERO ── -->
+    <section class="services-section" style="padding-top: 10px; padding-bottom: 60px;">
+        <div class="services-container">
+            <div class="services-header" style="text-align: center;">
+                <div class="smm-hero-badge">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    Social Media Marketing
+                </div>
+                <h1 style="font-size: clamp(2.4rem, 5vw, 4rem); line-height: 1.15; margin-bottom: 22px; font-weight: 900; letter-spacing: -1px;">
+                    <span class="highlight-text">SMO Services in India</span>
+                </h1>
+                <p id="normalContent" style="max-width: 680px; margin: 0 auto 36px; font-size: 1.15rem; line-height: 1.7; color: var(--secondary-text);">
+                    We build scroll-stopping content, grow engaged communities, and run high-converting social campaigns that transform your brand from invisible to unstoppable.
+                </p>
+                <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                    <a href="/contact" style="padding: 15px 38px; font-size: 1.05rem; border-radius: 30px; display: inline-block; background: #FDE047; color: #111827; font-weight: 700; text-decoration: none; letter-spacing: 0.3px; transition: background 0.25s ease, transform 0.2s ease; box-shadow: 0 8px 20px rgba(253,224,71,0.35);" onmouseover="this.style.background='#facc15'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#FDE047'; this.style.transform='translateY(0)'">
+                        Get a Free Social Audit <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i>
+                    </a>
+                    <a href="javascript:void(0)" id="openSeoModalBtn" style="padding: 15px 38px; font-size: 1.05rem; border-radius: 30px; background: #1e293b; color: #fff; display: inline-block; text-decoration: none; font-weight: 700; letter-spacing: 0.3px; transition: background 0.25s ease, transform 0.2s ease;" onmouseover="this.style.background='#0f172a'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#1e293b'; this.style.transform='translateY(0)'">
+                        Read More <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Floating social icons visual -->
+            <div style="display: flex; justify-content: center; align-items: center; gap: 24px; margin: 60px auto 10px; flex-wrap: wrap; max-width: 500px;">
+                <div style="width: 72px; height: 72px; background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af); border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #fff; box-shadow: 0 10px 30px rgba(221,42,123,0.3); animation: floatA 3s ease-in-out infinite;">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div style="width: 84px; height: 84px; background: #1877F2; border-radius: 22px; display: flex; align-items: center; justify-content: center; font-size: 2.4rem; color: #fff; box-shadow: 0 10px 30px rgba(24,119,242,0.3); animation: floatB 3.5s ease-in-out infinite;">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div style="width: 72px; height: 72px; background: #0A66C2; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #fff; box-shadow: 0 10px 30px rgba(10,102,194,0.3); animation: floatA 4s ease-in-out infinite;">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div style="width: 72px; height: 72px; background: #ff0050; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #fff; box-shadow: 0 10px 30px rgba(255,0,80,0.3); animation: floatB 2.8s ease-in-out infinite;">
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+                <div style="width: 72px; height: 72px; background: #FF0000; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #fff; box-shadow: 0 10px 30px rgba(255,0,0,0.3); animation: floatA 3.2s ease-in-out infinite;">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <style>
+                @keyframes floatA { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+                @keyframes floatB { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-16px)} }
+            </style>
+        </div>
+    </section>
+
+    <!-- ── STATS STRIP ── -->
+    <section style="padding: 0 20px 80px;">
+        <div class="services-container">
+            <div class="stats-strip">
+                <div class="stat-cell">
+                    <h3 style="color: #ec4899;">8x</h3>
+                    <p>Average Engagement Increase</p>
+                </div>
+                <div class="stat-cell">
+                    <h3 style="color: #1877F2;">10K<span style="font-size:1.8rem;">+</span></h3>
+                    <p>Followers Grown Per Month</p>
+                </div>
+                <div class="stat-cell">
+                    <h3 style="color: #10b981;">65<span style="font-size:1.8rem;">%</span></h3>
+                    <p>Lower Cost Per Lead vs Paid Ads</p>
+                </div>
+                <div class="stat-cell">
+                    <h3 style="color: var(--accent);">500<span style="font-size:1.8rem;">+</span></h3>
+                    <p>Viral Posts Created</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── PLATFORMS ── -->
+    <section class="services-section" id="platforms">
+        <div class="services-container">
+            <div class="services-header" style="text-align: center; margin-bottom: 60px;">
+                <h4 class="sub-heading" style="justify-content: center;">Where We Grow You</h4>
+                <h2>Platforms We <span class="highlight-text">Master</span></h2>
+                <p style="max-width: 600px; margin: 0 auto;">We deploy custom strategies built for each platform's unique algorithm, audience behaviour, and content format — nothing generic.</p>
+            </div>
+
+            <div class="platform-grid">
+
+                <div class="platform-card ig">
+                    <div class="platform-icon"><i class="fa-brands fa-instagram"></i></div>
+                    <h3 style="font-size: 1.35rem; margin-bottom: 10px;">Instagram</h3>
+                    <p style="color: var(--secondary-text); font-size: 0.95rem; line-height: 1.6;">The visual engine of modern brands. We craft Reels, carousels, and Stories that stop the scroll and build loyal audiences.</p>
+                    <ul class="platform-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Reels & Story Strategy</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Hashtag & Explore Optimization</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Influencer Collaboration</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Instagram Shopping Setup</li>
+                    </ul>
+                </div>
+
+                <div class="platform-card fb">
+                    <div class="platform-icon"><i class="fa-brands fa-facebook-f"></i></div>
+                    <h3 style="font-size: 1.35rem; margin-bottom: 10px;">Facebook</h3>
+                    <p style="color: var(--secondary-text); font-size: 0.95rem; line-height: 1.6;">3 billion users, powerful targeting. We run community-building and retargeting campaigns that drive real conversions.</p>
+                    <ul class="platform-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Page Growth & Engagement</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Facebook Groups Management</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Targeted Ad Campaigns</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Event & Lead Generation</li>
+                    </ul>
+                </div>
+
+                <div class="platform-card li">
+                    <div class="platform-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                    <h3 style="font-size: 1.35rem; margin-bottom: 10px;">LinkedIn</h3>
+                    <p style="color: var(--secondary-text); font-size: 0.95rem; line-height: 1.6;">The #1 platform for B2B leads. We build your thought leadership profile and generate high-quality inbound inquiries.</p>
+                    <ul class="platform-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Personal & Company Page Branding</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Thought Leadership Content</li>
+                        <li><i class="fa-solid fa-circle-check"></i> LinkedIn Lead Gen Ads</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Connection & Outreach Campaigns</li>
+                    </ul>
+                </div>
+
+                <div class="platform-card yt">
+                    <div class="platform-icon"><i class="fa-brands fa-youtube"></i></div>
+                    <h3 style="font-size: 1.35rem; margin-bottom: 10px;">YouTube</h3>
+                    <p style="color: var(--secondary-text); font-size: 0.95rem; line-height: 1.6;">The world's second-largest search engine. We build your channel authority with SEO-optimized videos that rank and retain.</p>
+                    <ul class="platform-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Channel SEO & Optimization</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Thumbnail & Title A/B Testing</li>
+                        <li><i class="fa-solid fa-circle-check"></i> YouTube Shorts Strategy</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Subscriber Growth Campaigns</li>
+                    </ul>
+                </div>
+
+                <div class="platform-card tk">
+                    <div class="platform-icon"><i class="fa-brands fa-tiktok"></i></div>
+                    <h3 style="font-size: 1.35rem; margin-bottom: 10px;">TikTok</h3>
+                    <p style="color: var(--secondary-text); font-size: 0.95rem; line-height: 1.6;">The virality machine. We craft native short-form content that taps into trends and puts your brand in front of millions organically.</p>
+                    <ul class="platform-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Trend-Jacking Content</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Creator Collaboration</li>
+                        <li><i class="fa-solid fa-circle-check"></i> TikTok Shop Integration</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Viral Hook Writing</li>
+                    </ul>
+                </div>
+
+                <div class="platform-card tw">
+                    <div class="platform-icon"><i class="fa-brands fa-x-twitter"></i></div>
+                    <h3 style="font-size: 1.35rem; margin-bottom: 10px;">X (Twitter)</h3>
+                    <p style="color: var(--secondary-text); font-size: 0.95rem; line-height: 1.6;">Where conversations happen in real-time. We build authority through consistent posting, trending topic engagement, and community management.</p>
+                    <ul class="platform-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Daily Tweet Strategy</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Trending Hashtag Engagement</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Brand Voice Development</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Follower Growth Campaigns</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── OUR PROCESS ── -->
+    <section style="padding: 100px 20px; background: var(--bg);">
+        <div class="services-container" style="max-width: 820px;">
+            <div class="services-header" style="text-align: center; margin-bottom: 70px;">
+                <h4 class="sub-heading" style="justify-content: center;">Our Methodology</h4>
+                <h2>How We <span class="highlight-text">Grow You</span></h2>
+                <p style="max-width: 560px; margin: 0 auto;">A proven end-to-end approach — from understanding your brand to scaling your social media presence.</p>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 28px;">
+
+                <div style="display: flex; gap: 25px; background: var(--card-bg); padding: 30px; border-radius: 20px; border: 1px solid var(--border); box-shadow: var(--shadow);">
+                    <div style="flex-shrink: 0; width: 60px; height: 60px; background: var(--accent); color: #111; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800;">01</div>
+                    <div>
+                        <h3 style="font-size: 1.4rem; color: var(--text); margin-bottom: 8px;">Brand & Audience Discovery</h3>
+                        <p style="color: var(--secondary-text); font-size: 1rem; line-height: 1.65;">We deep-dive into your brand identity, USPs, target audience, and competitors to define your unique social voice and positioning strategy.</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 25px; background: var(--card-bg); padding: 30px; border-radius: 20px; border: 1px solid var(--border); box-shadow: var(--shadow);">
+                    <div style="flex-shrink: 0; width: 60px; height: 60px; background: var(--accent); color: #111; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800;">02</div>
+                    <div>
+                        <h3 style="font-size: 1.4rem; color: var(--text); margin-bottom: 8px;">Content Calendar & Creative Strategy</h3>
+                        <p style="color: var(--secondary-text); font-size: 1rem; line-height: 1.65;">We build a 30-day content calendar with posts, Reels, Stories, and campaigns — each designed to educate, entertain, or convert your audience.</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 25px; background: var(--card-bg); padding: 30px; border-radius: 20px; border: 1px solid var(--border); box-shadow: var(--shadow);">
+                    <div style="flex-shrink: 0; width: 60px; height: 60px; background: var(--accent); color: #111; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800;">03</div>
+                    <div>
+                        <h3 style="font-size: 1.4rem; color: var(--text); margin-bottom: 8px;">Content Production & Publishing</h3>
+                        <p style="color: var(--secondary-text); font-size: 1rem; line-height: 1.65;">Our in-house design and copy team produces premium visuals, captions, and video scripts. We handle scheduling across all platforms at optimal times.</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 25px; background: var(--card-bg); padding: 30px; border-radius: 20px; border: 1px solid var(--border); box-shadow: var(--shadow);">
+                    <div style="flex-shrink: 0; width: 60px; height: 60px; background: var(--accent); color: #111; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800;">04</div>
+                    <div>
+                        <h3 style="font-size: 1.4rem; color: var(--text); margin-bottom: 8px;">Community Management & Engagement</h3>
+                        <p style="color: var(--secondary-text); font-size: 1rem; line-height: 1.65;">We respond to comments, DMs, and mentions daily — keeping your community warm, loyal, and engaged with your brand every single day.</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 25px; background: var(--card-bg); padding: 30px; border-radius: 20px; border: 1px solid #ec4899; box-shadow: 0 10px 30px -10px rgba(236,72,153,0.25);">
+                    <div style="flex-shrink: 0; width: 60px; height: 60px; background: #ec4899; color: #fff; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800;">
+                        <i class="fa-solid fa-crown"></i>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1.4rem; color: var(--text); margin-bottom: 8px;">Analytics, Reporting & Scaling</h3>
+                        <p style="color: var(--secondary-text); font-size: 1rem; line-height: 1.65;">Monthly reports covering reach, engagement, follower growth, and conversions. We double down on what performs and cut what doesn't — continuously improving.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── WHAT'S INCLUDED ── -->
+    <section class="services-section" style="padding-top: 80px; padding-bottom: 80px;">
+        <div class="services-container">
+            <div class="services-header" style="text-align: center; margin-bottom: 20px;">
+                <h4 class="sub-heading" style="justify-content: center;">Everything You Get</h4>
+                <h2>Full-Service <span class="highlight-text">SMM Package</span></h2>
+                <p style="max-width: 560px; margin: 0 auto;">Every deliverable you need to dominate social media — handled completely by our team.</p>
+            </div>
+
+            <div class="deliverable-row">
+                <div class="deliverable-tag"><i class="fa-solid fa-image"></i> Custom Graphic Design</div>
+                <div class="deliverable-tag"><i class="fa-solid fa-video"></i> Reels & Short-Form Video</div>
+                <div class="deliverable-tag"><i class="fa-solid fa-pen-nib"></i> Caption Copywriting</div>
+                <div class="deliverable-tag"><i class="fa-solid fa-calendar-days"></i> Content Calendar</div>
+                <div class="deliverable-tag"><i class="fa-solid fa-hashtag"></i> Hashtag Research</div>
+                <div class="deliverable-tag"><i class="fa-solid fa-comments"></i> Comment Management</div>
+                <div class="deliverable-tag"><i class="fa-solid fa-chart-bar"></i> Monthly Analytics Report</div>
+                <div class="deliverable-tag"><i class="fa-solid fa-bullseye"></i> Paid Social Campaigns</div>
+                <div class="deliverable-tag"><i class="fa-solid fa-fire"></i> Trend & Viral Monitoring</div>
+                <div class="deliverable-tag"><i class="fa-solid fa-star"></i> Influencer Outreach</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FAQ ── -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <div class="faq-header">
+                <h2>SMM <span class="highlight-text">FAQ</span></h2>
+                <p>Common questions about our Social Media Marketing services.</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How many posts will you create per month?
+                        <i class="fa-solid fa-chevron-down icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Depending on your package, we typically create 20–30 posts per month including feed posts, Reels, and Stories. For premium plans, this includes daily posting across all selected platforms. Everything is planned in advance via a shared content calendar.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you handle content creation or do we need to provide materials?
+                        <i class="fa-solid fa-chevron-down icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We handle everything end-to-end — graphics, video editing, captions, and publishing. You only need to provide your brand assets (logo, brand colours) during onboarding. We also shoot UGC-style content ideas and scripts if you'd like to create original footage.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How long before I see results from social media?
+                        <i class="fa-solid fa-chevron-down icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Engagement improvements are typically visible within 30–45 days. Significant follower growth and brand awareness usually build within 3–4 months of consistent, strategy-led posting. Viral content moments can happen anytime — especially when we leverage trending audio and formats.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Will you reply to comments and DMs on our behalf?
+                        <i class="fa-solid fa-chevron-down icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Community management is included in our packages. We respond to comments, engage with followers, and manage DMs using your approved brand voice — so your audience always feels heard and valued.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can you run paid social ads along with organic management?
+                        <i class="fa-solid fa-chevron-down icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. We offer integrated organic + paid SMM packages. Our team manages your ad budget on Meta (Facebook/Instagram) and other platforms with laser-targeted audience segmentation, creative testing, and conversion tracking — all under one roof.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CTA SECTION ── -->
+    <section style="padding: 100px 20px; background-color: #f8fafc; border-top: 1px solid #e2e8f0; text-align: center;">
+        <div class="services-container" style="background: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23cbd5e1\' fill-opacity=\'0.2\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E'); padding: 70px 40px; border-radius: 24px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+            <h2 style="font-size: 2.5rem; color: #0f172a; margin-bottom: 18px; font-weight: 900; letter-spacing: -0.5px;">Ready to Go Viral?</h2>
+            <p style="color: #475569; font-size: 1.1rem; max-width: 620px; margin: 0 auto 30px; line-height: 1.7;">Your competitors are posting every day. Don't let them own your audience. Let's build you a social media presence that people actually follow, love, and buy from.</p>
+
+            <ul class="cta-checklist" style="max-width: 380px; margin: 0 auto 40px;">
+                <li><i class="fa-solid fa-circle-check"></i> Free social media audit included</li>
+                <li><i class="fa-solid fa-circle-check"></i> Custom strategy for your brand</li>
+                <li><i class="fa-solid fa-circle-check"></i> No long-term contracts</li>
+                <li><i class="fa-solid fa-circle-check"></i> Dedicated account manager</li>
+            </ul>
+
+            <a href="/contact" style="padding: 16px 48px; font-size: 1.1rem; border-radius: 30px; display: inline-block; background: #FDE047; color: #111827; font-weight: 700; text-decoration: none; letter-spacing: 0.3px; transition: background 0.25s ease, transform 0.2s ease; box-shadow: 0 10px 25px -5px rgba(253,224,71,0.4);" onmouseover="this.style.background='#facc15'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#FDE047'; this.style.transform='translateY(0)'">
+                Start Growing Today <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="modern-footer">
+        <div class="footer-top">
+            <div class="footer-col brand-col">
+                <h2 class="footer-logo"><a href="/" style="color: inherit; text-decoration: none;">Anurag Marketing</a></h2>
+                <p>Accelerating digital success across all industries with cutting-edge strategies, education, and marketing automation.</p>
+                <div class="social-links">
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/guptaanurag09" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/anurag.gupta_09" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1Djz8Gpzga/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/services">Our Services</a></li>
+                    <li><a href="/blog">Latest Blog</a></li>
+                    <li><a href="/contact">Contact Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="/services">Digital Marketing</a></li>
+                    <li><a href="/seo">SEO Optimization</a></li>
+                    <li><a href="/performance-marketing">Performance Marketing</a></li>
+                    <li><a href="/smo">SMO</a></li>
+                    <li><a href="/services">Brand Strategy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col newsletter-col">
+                <h3>Subscribe</h3>
+                <p>Get the latest social media tips, trends, and strategies directly in your inbox.</p>
+                <form class="subscribe-form" onsubmit="event.preventDefault(); this.querySelector('button').innerHTML='<i class=\'fa-solid fa-check\'></i>'; this.querySelector('input').value=''; this.querySelector('button').style.background='#10b981';">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Anurag Marketing. All rights reserved. Designed for digital success.</p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Accordion & Modal Logic
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".faq-question").forEach(question => {
+                question.addEventListener("click", () => {
+                    const faqItem = question.parentElement;
+                    const faqAnswer = question.nextElementSibling;
+                    document.querySelectorAll(".faq-item").forEach(item => {
+                        if (item !== faqItem) {
+                            item.classList.remove("active");
+                            item.querySelector(".faq-answer").style.maxHeight = null;
+                        }
+                    });
+                    faqItem.classList.toggle("active");
+                    if (faqItem.classList.contains("active")) {
+                        faqAnswer.style.maxHeight = faqAnswer.scrollHeight + "px";
+                    } else {
+                        faqAnswer.style.maxHeight = null;
+                    }
+                });
+            });
+
+            // SEO Content Modal Logic
+            const openModalBtn = document.getElementById("openSeoModalBtn");
+            const closeModalBtn = document.getElementById("closeSeoModalBtn");
+            const modal = document.getElementById("seoContentModal");
+            const modalOverlay = document.getElementById("seoModalOverlay");
+
+            if (openModalBtn && modal) {
+                openModalBtn.addEventListener("click", function () {
+                    modal.classList.add("active");
+                    document.body.classList.add("modal-open");
+                });
+
+                const closeModal = function () {
+                    modal.classList.remove("active");
+                    document.body.classList.remove("modal-open");
+                };
+
+                closeModalBtn.addEventListener("click", closeModal);
+                modalOverlay.addEventListener("click", closeModal);
+
+                document.addEventListener("keydown", function (e) {
+                    if (e.key === "Escape" && modal.classList.contains("active")) {
+                        closeModal();
+                    }
+                });
+            }
+        });
+    </script>
+
+    <!-- SEO Content Modal -->
+    <div id="seoContentModal" class="seo-modal" aria-hidden="true">
+        <div class="seo-modal-overlay" id="seoModalOverlay"></div>
+        <div class="seo-modal-container">
+            <div class="seo-modal-header">
+                <h3>About Our SMO</h3>
+                <button class="seo-modal-close" id="closeSeoModalBtn" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="seo-modal-body" id="seoModalBody">
+                
+                <p>Social media looks easy from the outside. Post regularly, use some hashtags, stay active. But after a while, most businesses notice something. The posts are going out, but nothing really comes back.</p>
+                <p>That’s when people start looking for SMO Services in India. Not just to stay active, but to actually make social media useful.</p>
+                <p>We don’t treat social media like a posting task. First, we look at what you are already doing. What kind of posts you share, how people respond, and where things stop working. In many cases, the problem is not effort, it is direction.</p>
+                <p>If you are searching for Affordable SMO Services, you probably don’t want long plans or complicated strategies. You just want your pages to look right, stay active, and slowly start bringing some value. That’s exactly how we approach it. Keep things simple, but consistent.</p>
+                <p>Working with an SMO Expert in India should not feel confusing. You should know what is being posted and why. Some posts are for reach, some for engagement, and some just to keep your page alive. Not everything needs to go viral.</p>
+                <p>We focus on making your social presence look real. No forced content, no random trends that don’t match your brand. Just clean, steady work so when someone checks your profile, it actually feels active and trustworthy.</p>
+                <p>Social media takes time to build. But when it is handled properly, it starts supporting your business instead of just sitting there.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
